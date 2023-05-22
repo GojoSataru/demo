@@ -1,0 +1,21 @@
+package day1;
+
+import java.util.Scanner;
+
+class Program9 
+{
+	//define method to get the area of a squar.
+	public static void main(String[] args)
+	{
+		public static void areaOfSquare(int n )
+		{
+		Scanner sc = new Scanner(System.in);	
+		System.out.println("Enter side1 :");
+		int side = sc.nextInt();
+		/*System.out.println("Enter a side2 :");
+		int side2 = sc.nextInt();*/
+		int aos = side*side;
+		System.out.println("area of square is " + aos);
+		}
+	}
+}

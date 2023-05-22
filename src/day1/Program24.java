@@ -1,0 +1,28 @@
+package day1;
+
+import java.util.Scanner;
+
+class Program24 
+{
+	//to find digital sum
+	static int digitalSum(int n)
+	{
+		int sum =0;
+		int count=n;
+		while (count>0)
+		{
+			sum +=count%10;
+			count=count/10;
+		}
+		
+		return sum;
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter number");
+		int n = sc.nextInt();
+		System.out.println(digitalSum(n));
+
+	}
+}

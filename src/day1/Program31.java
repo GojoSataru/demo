@@ -1,0 +1,29 @@
+package day1;
+
+import java.util.Scanner;
+
+class Program31 
+{
+	static void fibbo(int n)
+	{
+		int i1 = 0;
+		int i2 = 1;
+		int sum=0;
+		for (int i=0;i<=n;i++)
+		{
+			System.out.println(sum);
+		    sum = i1+i2;
+			i1=i2;
+			i2=sum;		
+		}
+	}
+	//to print first n fibonacci numbers.
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number");
+		int n = sc.nextInt();
+		fibbo(n);
+		//System.out.println(fibbo(n));
+	}
+}

@@ -1,0 +1,13 @@
+package day1;
+class Program54 
+{
+	//to to store 5 names is an array and print all the names in single line.
+	public static void main(String[] args) 
+	{
+		String[] arr={"ramesh","suresh","kamlesh","jignesh","bhavesh"};
+		for (int i = 0;i < arr.length ;i++ )
+		{
+			System.out.print(arr[i]+" ,");
+		}
+	}
+}

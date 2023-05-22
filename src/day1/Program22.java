@@ -1,0 +1,32 @@
+package day1;
+
+import java.util.Scanner;
+
+class Program22
+{
+	//to find the factorial of first n natural numbers using loop.
+	static int fact(int a)
+	{
+		if (a > 1)
+		{
+		 return a*fact(a-1);
+		}
+		else
+		{
+			return 1;
+		}
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Nth number");
+		int a = sc.nextInt();
+		System.out.println(fact(a));
+		
+	}
+}
+/* 
+fact = 1;
+fact = fact*i
+i--;
+*/

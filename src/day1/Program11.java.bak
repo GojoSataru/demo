@@ -1,0 +1,22 @@
+package day1;
+
+import java.util.Scanner;
+class Program11 
+{
+	static void area(int height, int width)
+	{
+		int aor = height * width ;
+		System.out.println("Area of rectangle is:" + aor);
+	}
+
+	public static void main(String[] args) 
+	{
+		//to define a method to return a area of rectangle.
+		Scanner sc = new Scanner(System.in);	
+		System.out.println("Enter height :");
+		int height = sc.nextInt();
+		System.out.println("Enter width :");
+		int width = sc.nextInt();
+		area(height,width);
+	}
+}

@@ -1,0 +1,25 @@
+package day1;
+
+import java.util.Scanner;
+
+class  Program14
+{
+
+	//to find largest of three numbers using conditional operator.
+	static int large(int a,int b,int c)
+	{
+		int large = a>b?(a>c?a:c):(b>c?b:c);
+		return large;
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);	
+		System.out.println("Enter first number: ");
+		int num1 = sc.nextInt();
+		System.out.println("Enter the second number: ");
+		int num2 = sc.nextInt();
+		System.out.println("Enter the Third number: ");
+		int num2 = sc.nextInt();
+		System.out.println("The minimum number is: " + small(num1,num2));
+	}
+}
